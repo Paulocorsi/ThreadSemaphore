@@ -10,7 +10,7 @@ public class Main {
 		
 		Semaphore semaforo = new Semaphore(1);
 		
-		for(int Id = 0; Id < 5; Id++){
+		for(int Id = 1; Id <= 5; Id++){
 			Thread Pratos = new PratosController (Id, semaforo);
 			Pratos.start();
 		}
